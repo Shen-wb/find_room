@@ -5,8 +5,15 @@
 }
 
 html, body {
-  height: 100%;
   font-family: 'Microsoft YaHei';
   color: #333;
   background-color: #fff;
+}
+
+html, body, #root, .App {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
 }

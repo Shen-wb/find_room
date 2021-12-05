@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class News extends Component {
+export default class Me extends Component {
   render() {
     return (
       <div>
-        新闻
+        我的
       </div>
     )
   }

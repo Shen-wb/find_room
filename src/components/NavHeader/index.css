@@ -1,0 +1,13 @@
+.adm-nav-bar {
+  background-color: #f5f6f5; 
+  color: #333;
+}
+
+.adm-nav-bar-title {
+  color: #000;
+  font-size: 16px;
+}
+
+.mt {
+  margin-top: -45px;
+}

@@ -1,0 +1,23 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.body {
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+.bottom {
+  flex: 0;
+  width: 100%;
+  border-top: solid 1px var(--adm-border-color);
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+
+
