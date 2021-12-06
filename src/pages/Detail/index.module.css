@@ -1,0 +1,268 @@
+.container {
+  background-color: rgb(243,243,243);
+}
+
+#mapContainer {
+  width: 100%;
+  height: 200px;
+  z-index: 999;
+}    
+
+.headerBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.headerBtns .leftBtn {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-bottom: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+  margin-left: 20px;
+}
+
+.detailSwiper {
+  height: 245px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  user-select: none;
+  background-size: cover;
+}
+
+.desc {
+  background-color: #fff;
+}
+
+.titleContent {
+  border-bottom: 1px solid lightgray;
+  margin: 0 18px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+.titleContent .title {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.titleContent .tags {
+  display: flex;
+}
+
+.titleContent .tag {
+  height: 20px;
+  border-radius: 3px;
+  background-color: rgb(215, 241, 241);
+  color: rgb(38, 169, 192);
+  text-align: center;
+  padding: 1px 5px 0 5px;
+  margin-right: 5px;
+}
+
+.introduce {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+  margin: 15px 18px;
+  padding-bottom: 15px;
+}
+
+.introduce .intrInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.introduce .intrInfo .price,.roomType,.size {
+  color: rgb(239,88,68);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.introduce .intrInfo .price span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.houseInfo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 18px;
+  padding-bottom: 15px;
+}
+
+.houseInfo div {
+  flex: 50%;
+  color: gray;
+}
+
+.houseInfo div span {
+  color: black;
+}
+
+.houseInfo div:nth-child(n+3) {
+  margin-top: 8px;
+}
+
+.loca {
+  width: 100%;
+  background-color: #fff;
+  margin-top: -6px;
+  padding: 10px 10px;
+}
+
+.loca .community {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.mulch {
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  padding: 0 3px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: rgb(235,93,89);
+  color: #fff;
+}
+
+.arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: -2px 10px;
+  border: 5px solid transparent;
+  border-top-width: 5px;
+  border-top-color: rgb(235,93,89);
+} 
+
+.loca .supportTitle {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.loca .supporting {
+  padding: 15px 0 0 0;
+}
+
+.situation {
+  background-color: #fff;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 10px 10px 10px;
+}
+
+.situation .situationTitle {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.situation .content .header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 18px;
+}
+
+.situation .content .header img {
+  width: 60px;
+  height: 60px;
+}
+
+.situation .content .header .sendMsgBtn {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 70px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgb(31,185,121);
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(31,185,121);
+  color: rgb(31,185,121);
+  outline: none;
+}
+
+.situation .content .header .name {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.situation .content .header .name div:nth-child(2) {
+  color: rgb(232,76,75);
+  font-size: 12px;
+}
+
+.situation .content p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 1.5em;
+}
+
+.like {
+  height: 95px;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 15px 10px;
+}
+
+.like .likeTitle {
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.footerBtns {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  background-color: pink;
+}
+
+.footerBtns button {
+  flex: 1;
+  border: 0;
+  font-size: 16px;
+  color: gray;
+}
+
+.footerBtns button:first-child {
+  border-right: 1px solid lightgray;
+}
+
+.footerBtns button:last-child {
+  background-color: rgb(31,185,121);
+  color: #fff;
+}

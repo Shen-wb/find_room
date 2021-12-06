@@ -132,6 +132,7 @@
 
 .houseItem .house .houseContent .tags {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .houseItem .house .houseContent .tag {
@@ -163,4 +164,38 @@
   z-index: 999;
   border-radius: 0;
   font-weight: 700;
+}
+
+.detailContent {
+  position: fixed;
+  top: 45px;
+  bottom: 45px;
+  margin-top: -45px;
+  width: 100%;
+  overflow: auto;
+}
+
+.footerBtns {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background-color: pink;
+}
+
+.footerBtns button {
+  flex: 1;
+  border: 0;
+  font-size: 16px;
+  color: gray;
+}
+
+.footerBtns button:first-child {
+  border-right: 1px solid lightgray;
+}
+
+.footerBtns button:last-child {
+  background-color: rgb(31,185,121);
+  color: #fff;
 }

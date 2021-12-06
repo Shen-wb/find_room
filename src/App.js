@@ -5,6 +5,7 @@ import CityList from './pages/CityList'
 import Search from './pages/Search'
 import Map from './pages/Map'
 import Rent from './pages/Rent'
+import Detail from './pages/Detail'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/citylist" element={<CityList/>}></Route>
           <Route path="/search" element={<Search/>}></Route>
           <Route path="/map" element={<Map/>}></Route>
+          <Route path="/detail/*" element={<Detail/>}></Route>
           <Route path="/rent" element={<Rent/>}></Route>
           <Route path="/" element={<Navigate replace to="/home"/>}></Route>
         </Routes>

@@ -1,0 +1,23 @@
+{
+  "id": "2992518",
+  "name": "findroom",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5321529",
+      "name": "实名认证",
+      "font_class": "shimingrenzheng",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "68268",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

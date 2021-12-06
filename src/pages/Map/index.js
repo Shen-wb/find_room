@@ -4,17 +4,21 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import NavHeader from '../../components/NavHeader'
 import './index.css'
+import Detail from '../Detail'
+import { StarOutline } from 'antd-mobile-icons'
 
 const BMapGL = window.BMapGL
 export default class findMap extends Component {
   state = {
     visible: false,
+    visible2: false,
     houseList: '',
     isDisabled: true,
     preAreaId: '',
     prePoint: {},
     flag: true,
-    currentLevel: 0
+    currentLevel: 0,
+    detailData: {}
   }
 
   componentDidMount() {
@@ -200,10 +204,19 @@ export default class findMap extends Component {
     }
   }
 
+  goDetail = async (id) => {
+    const data = await axios.get(`/houses/${id}`)
+    this.setState({ visible2: true, detailData: data.data.body})
+  }
+
+  closeDetail = () => {
+    this.setState({visible2: false})
+  }
+
   renderHouseList = (list) => {
     return list.map(item => {
       return (
-        <div className="house" key={item.houseCode}>
+        <div className="house" key={item.houseCode} onClick={()=>{this.goDetail(item.houseCode)}}>
           <img className="imgWrap" src={`http://localhost:8080${item.houseImg}`} alt="图片"></img>
           <div className="houseContent">
             <div className="title">{item.title}</div>
@@ -262,6 +275,20 @@ export default class findMap extends Component {
           </div>
           <div className="houseItem">
             {this.state.houseList}
+          </div>
+        </Popup>
+        <Popup visible={this.state.visible2} bodyStyle={{ height: '100vh' }} maskStyle={{display: 'none'}} destroyOnClose>
+          <div className="detailContent">
+            <Detail closeDetail={this.closeDetail} houseId={this.state.detailId} detailData={this.state.detailData}></Detail>
+          </div>
+          {/* 底部按钮组 */}
+          <div className="footerBtns">
+            <button >
+            <StarOutline style={{marginRight: '5px'}}/>
+            <span>收藏</span>
+            </button>
+            <button>在线咨询</button>
+            <button>电话预约</button>
           </div>
         </Popup>
       </div>

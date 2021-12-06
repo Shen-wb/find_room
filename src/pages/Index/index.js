@@ -97,7 +97,7 @@ export default class Index extends Component {
       <div className="index-container">
         {/* 轮播图 */}
         <div className="swiper">
-          <Swiper>{items}</Swiper>
+          <Swiper autoplay>{items}</Swiper>
           <CityList currentCity={this.state.currentCity}></CityList>
         </div>
         {/* 导航 */}
